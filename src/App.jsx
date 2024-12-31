@@ -1,11 +1,13 @@
 import "./App.css";
 import { useReducer, useRef, createContext } from "react";
 import { Route, Routes } from "react-router-dom";
+
 // pages
 import Home from "./pages/Home";
 import Diary from "./pages/Diary";
 import New from "./pages/New";
 import Edit from "./pages/Edit";
+
 // components
 import Notfound from "./pages/Notfount";
 import Button from "./components/Button";
@@ -93,7 +95,7 @@ function App() {
     });
   };
 
-  return (
+  return ( 
     <>
       <DiaryStateContext.Provider value={data}>
         <DiaryDispatchContext.Provider
