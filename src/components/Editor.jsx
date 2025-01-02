@@ -32,7 +32,7 @@ const Editor = ({ initData, onSubmit }) => {
     if (name === "createdDate") {
       value = new Date(value);
     }
-
+ 
     setInput({
       ...input,
       [name]: value,
